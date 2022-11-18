@@ -1,4 +1,4 @@
-<?php 
+<?php
 include("./api/read.php");
 ?>
 <!DOCTYPE html>
@@ -13,6 +13,12 @@ include("./api/read.php");
 </head>
 
 <body>
+    <nav class="navbar bg-light">
+        <form class="container-fluid justify-content-start">
+            <a href="listeEmployes.php"><button class="btn btn-outline-success me-2" type="button">Home</button></a>
+            <button class="btn btn-sm btn-outline-secondary" type="button">Employé</button>
+        </form>
+    </nav>
     <div class="container text-center">
         <h1>Employés</h1>
         <a href="ajoutEmployes.php" class="btn btn-success btn-rounded" style="float: right;" role="button">Ajouter un employé</a>
@@ -30,20 +36,20 @@ include("./api/read.php");
                     <th>Modifier</th>
                     <th>Supprimer</th>
                 </tr>
-                    <?php 
-                    foreach($employeeArr['body'] as $employe){
-                        echo '<tr>';
-                        echo '<td>'.$employe['id'].'</td>';
-                        echo '<td>'.$employe['name'].'</td>';
-                        echo '<td>'.$employe['email'].'</td>';
-                        echo '<td>'.$employe['age'].'</td>';
-                        echo '<td>'.$employe['designation'].'</td>';
-                        echo '<td>'.$employe['created'].'</td>';
-                        echo '<td><a href="modifierEmploye.php?id='.$employe['id'].'"><img src="img/update.png" style="width:20px;height:20px;"></a></td>';
-                        echo '<td><a href="api/delete.php?id='.$employe['id'].'"><img src="img/delete.png" style="width:20px;height:20px;"></a></td>';
-                        echo '</tr>';
-                    }
-                    ?>
+                <?php
+                foreach ($employeeArr['body'] as $employe) {
+                    echo '<tr>';
+                    echo '<td>' . $employe['id'] . '</td>';
+                    echo '<td>' . $employe['name'] . '</td>';
+                    echo '<td>' . $employe['email'] . '</td>';
+                    echo '<td>' . $employe['age'] . '</td>';
+                    echo '<td>' . $employe['designation'] . '</td>';
+                    echo '<td>' . $employe['created'] . '</td>';
+                    echo '<td><a href="modifierEmploye.php?id=' . $employe['id'] . '"><img src="img/update.png" style="width:20px;height:20px;"></a></td>';
+                    echo '<td><a href="api/delete.php?id=' . $employe['id'] . '"><img src="img/delete.png" style="width:20px;height:20px;"></a></td>';
+                    echo '</tr>';
+                }
+                ?>
             </table>
         </div>
     </div>
