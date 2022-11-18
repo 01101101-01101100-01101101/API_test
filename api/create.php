@@ -27,6 +27,7 @@
     
     if($item->createEmployee()){
         echo 'Employee created successfully.';
+        header('location: ../listeEmployes.php');
     } else{
         echo 'Employee could not be created.';
     }

@@ -14,7 +14,7 @@
 <br><br><br><br>
 <main class="form-signin">
   <div class="container w-50 text-center">
-    <form method="POST" action="../TEST_API_2/api/create.php">
+    <form method="POST" action="api/create.php">
       <div class="form-floating">
         <input type="text" class="form-control" name="nom">
         <label for="floatingInput">Nom de l'employé</label>
