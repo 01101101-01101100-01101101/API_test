@@ -39,8 +39,8 @@ include("./api/read.php");
                         echo '<td>'.$employe['age'].'</td>';
                         echo '<td>'.$employe['designation'].'</td>';
                         echo '<td>'.$employe['created'].'</td>';
-                        echo '<td><a href="modifierEmploye.php?id='.$employe['id'].'"><img href="img/delete.jpg" style="width:20px;height:20px;"></a></td>';
-                        echo '<td><a href="api/delete.php?id='.$employe['id'].'"><img href="img/delete.jpg" style="width:20px;height:20px;"></a></td>';
+                        echo '<td><a href="modifierEmploye.php?id='.$employe['id'].'"><img src="img/update.jpg" style="width:20px;height:20px;"></a></td>';
+                        echo '<td><a href="api/delete.php?id='.$employe['id'].'"><img src="img/delete.png" style="width:20px;height:20px;"></a></td>';
                         echo '</tr>';
                     }
                     ?>
