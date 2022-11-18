@@ -14,7 +14,7 @@ include_once('api/single_read.php');
   
 <main class="form-signin">
   <div class="container w-50 text-center">
-    <form method="POST" action="../TEST_API_2/api/update.php">
+    <form method="POST" action="api/update.php">
         <input type="hidden" name="id" value="<?= $emp_arr["id"] ?>">
       <div class="form-floating">
         <input type="text" class="form-control" name="name" value="<?php echo $emp_arr['name'] ?>">
