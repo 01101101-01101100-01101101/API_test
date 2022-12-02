@@ -1,5 +1,11 @@
 <?php
 include("./api/read.php");
+
+session_start();
+
+if(!isset($_SESSION["rôle"])){
+    header("location: login.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +17,7 @@ include("./api/read.php");
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <title>Document</title>
 </head>
+<body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.php">Home</a>
@@ -25,13 +32,7 @@ include("./api/read.php");
     </div>
   </div>
 </nav>
-<body>
-    <nav class="navbar bg-light">
-        <form class="container-fluid justify-content-start">
-            <a href="listeEmployes.php"><button class="btn btn-outline-success me-2" type="button">Home</button></a>
-            <button class="btn btn-sm btn-outline-secondary" type="button">Employé</button>
-        </form>
-    </nav>
+
     <div class="container text-center">
         <h1>Employés</h1>
         
