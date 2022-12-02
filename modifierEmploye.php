@@ -1,5 +1,12 @@
 <?php 
 include_once('api/single_read.php');
+
+session_start();
+
+if(!isset($_SESSION["rôle"]) || $_SESSION["rôle"] == 0){
+  header("location: index.php");
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +18,7 @@ include_once('api/single_read.php');
   <title>Document</title>
 </head>
 <body>
-  
+
 <main class="form-signin">
   <div class="container w-50 text-center">
     <form method="POST" action="api/update.php">
@@ -32,7 +39,7 @@ include_once('api/single_read.php');
         <input type="text" class="form-control" name="designation" value="<?php echo $emp_arr['designation'] ?>">
         <label for="floatingInput">Designation</label>
       </div>
-      <button class="w-100 btn btn-lg btn-primary" type="submit">Modifier l'employé</button>
+      <button class="w-100 btn btn-lg btn-primary" style="background-color: #a5d696 " type="submit">Modifier l'employé</button>
     </form>
     <br>
   </div>
