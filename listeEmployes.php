@@ -1,4 +1,4 @@
-<?php 
+<?php
 include("./api/read.php");
 ?>
 <!DOCTYPE html>
@@ -26,6 +26,12 @@ include("./api/read.php");
   </div>
 </nav>
 <body>
+    <nav class="navbar bg-light">
+        <form class="container-fluid justify-content-start">
+            <a href="listeEmployes.php"><button class="btn btn-outline-success me-2" type="button">Home</button></a>
+            <button class="btn btn-sm btn-outline-secondary" type="button">Employé</button>
+        </form>
+    </nav>
     <div class="container text-center">
         <h1>Employés</h1>
         
