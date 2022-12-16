@@ -1,4 +1,4 @@
-<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><help_text></help_text><element><id>UMLClass</id><coordinates><x>240</x><y>10</y><w>210</w><h>170</h></coordinates><panel_attributes>_User_
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><help_text></help_text><element><id>UMLClass</id><coordinates><x>259</x><y>30</y><w>210</w><h>160</h></coordinates><panel_attributes>_User_
 --
 idUser
 nom
@@ -6,10 +6,9 @@ prenom
 dateNaissance
 email
 password
-bloquer
 --
 login()
-logout()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>280</x><y>310</y><w>210</w><h>130</h></coordinates><panel_attributes>_Employe_
+logout()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>329</x><y>290</y><w>210</w><h>160</h></coordinates><panel_attributes>_Employe_
 --
 
 --
@@ -17,7 +16,7 @@ createEmployee()
 updateEmployee()
 deleteEmployee()
 createAccountBank()
-shareAccount()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>330</y><w>210</w><h>130</h></coordinates><panel_attributes>_Compte_
+shareAccount()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>579</x><y>350</y><w>210</w><h>130</h></coordinates><panel_attributes>_Compte_
 --
 idCompte
 #idUser
@@ -26,13 +25,13 @@ plafond
 --
 addSolde()
 removeSolde()
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>490</x><y>560</y><w>210</w><h>110</h></coordinates><panel_attributes>_CompteCourant_
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>419</x><y>600</y><w>210</w><h>110</h></coordinates><panel_attributes>_CompteCourant_
 --
 idCompteCourant
 decouvert
 
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>450</y><w>80</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>60;10;10;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>770</x><y>580</y><w>180</w><h>110</h></coordinates><panel_attributes>_CompteEpargne_
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>499</x><y>470</y><w>100</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>80;10;10;130</additional_attributes></element><element><id>UMLClass</id><coordinates><x>739</x><y>600</y><w>210</w><h>110</h></coordinates><panel_attributes>_CompteEpargne_
 --
 idCompteEpargne
 tauxInterets
@@ -40,7 +39,7 @@ tauxInterets
 
 
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>800</x><y>450</y><w>80</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;60;130</additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>340</y><w>210</w><h>130</h></coordinates><panel_attributes>_Admin_
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>779</x><y>470</y><w>70</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;50;130</additional_attributes></element><element><id>UMLClass</id><coordinates><x>69</x><y>270</y><w>210</w><h>130</h></coordinates><panel_attributes>_Admin_
 --
 
 --
@@ -48,14 +47,16 @@ createAdmin()
 updateAdmin()
 deleteAdmin()
 updateAccountBank()
-deleteAccountBank()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>140</y><w>210</w><h>110</h></coordinates><panel_attributes>_Utilisateur_
+deleteAccountBank()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>599</x><y>160</y><w>210</w><h>120</h></coordinates><panel_attributes>_Utilisateur_
+--
+block
 --
 createUtilisateur()
 updateUtilisateur()
 deleteUtilisateur()
 blockUtilisateur()
-unblockUtilisateur()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>90</y><w>170</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;150;50</additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>170</y><w>40</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>20;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>170</y><w>130</w><h>190</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>110;10;10;170</additional_attributes></element><element><id>UMLClass</id><coordinates><x>230</x><y>570</y><w>210</w><h>70</h></coordinates><panel_attributes>_Transaction_
+unblockUtilisateur()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>459</x><y>110</y><w>160</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;140;50</additional_attributes></element><element><id>Relation</id><coordinates><x>409</x><y>180</y><w>50</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;30;110</additional_attributes></element><element><id>Relation</id><coordinates><x>179</x><y>180</y><w>100</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>80;10;10;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>259</x><y>490</y><w>210</w><h>80</h></coordinates><panel_attributes>_Transaction_
 --
 idTransaction
 #idCompte
-solde</panel_attributes><additional_attributes></additional_attributes></element></diagram>
+montant</panel_attributes><additional_attributes></additional_attributes></element></diagram>
