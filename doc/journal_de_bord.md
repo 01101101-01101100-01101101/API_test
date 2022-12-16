@@ -11,4 +11,8 @@ On a commencé le diagramme de classe de la base de donnée et on a fait la vue 
 
 ### 16/12/2022
 
-Aujourd'hui, j'ai continué le diagramme de classe
+Aujourd'hui, j'ai continué le diagramme de classe du projet avec les user story
+
+#### Maximilien
+
+Absent
