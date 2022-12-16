@@ -1,8 +1,5 @@
 <?php
-include("./api/read.php");
-
 session_start();
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,8 +23,8 @@ session_start();
                   <h2 class="fw-bold mb-2 text-uppercase ">Notre premier API</h2>
                   <p class=" mb-5">Entrez vos informations!</p>
                   <div class="mb-3">
-                    <label for="emailName" class="form-label ">Email ou nom d'utilisateur</label>
-                    <input type="text" class="form-control" id="emailName" placeholder="ex: nom@example.com ou Example">
+                    <label for="email" class="form-label ">Email</label>
+                    <input type="text" class="form-control" id="email" placeholder="ex: nom@example.com">
                   </div>
                   <div class="mb-3">
                     <label for="password" class="form-label ">Mot de passe</label>
